@@ -31,7 +31,7 @@ DATA=`nc -l $PORT`
 
 echo "7. RECIBIENDO COMPROBACION FILE_NAME"
 
-if [ "$DATA" != "OK_FILE_NAME"]
+if [ "$DATA" != "OK_FILE_NAME" ]
 then
 	echo "ERROR 2: El filename se envio incorrectamente"
 	exit 2

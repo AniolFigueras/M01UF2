@@ -37,3 +37,8 @@ then
 	exit 2
 fi
 
+echo "8. ENVIANDO CONTENIDO"
+
+cat client/dragon.txt | nc localhost $PORT
+
+DATA=`nc -l $PORT`
